@@ -1,3 +1,10 @@
 #pragma once
 
-// В качестве заготовки возьмите последний эмулятор вектора.
+#include <vector>
+#include <string>
+
+struct Model {
+    using container = std::vector<std::string>;
+    container items;
+    container::iterator iterator = items.begin();
+};
